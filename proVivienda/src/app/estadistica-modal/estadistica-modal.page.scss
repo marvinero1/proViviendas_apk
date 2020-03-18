@@ -1,0 +1,30 @@
+h3{
+    color:black;
+}
+ion-item{
+    --background: transparent;
+}
+
+ion-card{
+    --background: white; 
+    padding-top: 7px;
+    padding-inline-start: 5px;
+
+}
+ion-content{
+    
+    background-image: url('/src/assets/images/fondoborroso.png');
+}
+
+.btnfavo{
+    margin: -44px 5px 0px 0px;
+    position: absolute;
+    right: 0;
+    --background: #157424;
+    float: right;
+}
+.btnInfo{
+    --background: #157424;
+    margin: 0 auto;
+    display: block;
+}

@@ -1,0 +1,75 @@
+<!-- <ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start"><ion-icon class="icon" name="contact"></ion-icon>
+        </ion-buttons>
+        <div>    
+        <img class="imgMenu" src="assets/images/proMenu.png">
+        </div>
+        <ion-buttons slot="end">
+          <ion-menu-button color="light" autoHide="false"></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar> 
+</ion-header> -->
+
+<ion-content>
+  <ion-img src="assets/images/condominio.png" (click)="btnHome"></ion-img>
+  <ion-card no-padding>
+    
+    <ion-card-header style="padding-top: 6px;">
+    <ion-card-title>Condominio</ion-card-title>   
+    <ion-card-subtitle font style="text-transform: capitalize;">Empresa de bienes Raices</ion-card-subtitle>
+  </ion-card-header>
+
+    <ion-item>
+    <ion-icon color="primary" name="home" style="width: 1em; height: 1em;"></ion-icon>
+    <ion-card-title>Casas</ion-card-title>
+    </ion-item>
+
+    <ion-grid>
+      <div *ngFor="let cat of items">
+        <ion-slides [options]="sliderConfig">
+          <ion-slide *ngFor="let product of cat.products">
+            <ion-card style="border: 1px #157424 solid;" (click)="btnPublicacion()">
+              <ion-card-content>
+                <img [src]="product.img">
+                <ion-label>Casa nueva</ion-label>
+                <br>
+                <ion-label>$180.000</ion-label>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+      </div>
+    </ion-grid>
+
+    <ion-item>
+      <ion-icon style="width: 1em; height: 1em;" color="primary" src="assets/images/icons/hotel.svg"></ion-icon>     
+      <ion-card-title>Departamentos</ion-card-title>
+    </ion-item>
+
+    <ion-grid>
+      <div *ngFor="let cat of itemsEdifico">
+        <ion-slides [options]="sliderConfig">
+          <ion-slide *ngFor="let product of cat.products">
+            <ion-card style="border: 1px #157424 solid;" (click)="btnPublicacion()">
+              <ion-card-content>
+                <img [src]="product.img">
+                <ion-label>Departamento nuevo</ion-label>
+                <br>
+                <ion-label>$180.000</ion-label>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+      </div>
+    </ion-grid>
+
+    <ion-col size="12" size-sm="4" style="text-align: center" align-self: center>
+      <div>
+        <ion-button shape="round" class="btnInfo" (click)="registrarInmueble()">
+          <ion-icon class="iconbtn" name="home"></ion-icon>Agregar Inmueble
+        </ion-button>
+      </div>
+    </ion-col>
+  </ion-card>
+</ion-content>

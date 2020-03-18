@@ -1,0 +1,26 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>vista1</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-slides autoplay="true" speed="3000"> 
+    <ion-slide *ngFor="let item of slides">
+      <div class="slide-img-padding">
+        <img [src]="item.img">
+      </div>
+      <div>  
+        <p [innerHTML]="item.titulo"></p>
+      </div> 
+    </ion-slide>
+    <ion-slide>
+        <div>
+            <ion-img src="assets/images/casa3.png"></ion-img>
+            <br>
+            <p >Que disfrute la aplicación</p>
+            <ion-button shape="round" class="btnInfo" (click)="continuar()">Continuar</ion-button>       
+        </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

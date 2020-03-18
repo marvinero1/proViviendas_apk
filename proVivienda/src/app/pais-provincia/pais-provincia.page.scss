@@ -1,0 +1,27 @@
+.logopro{
+    width: 50%;
+}
+ion-item{
+    --background:transparent;
+}
+ion-input{
+    color:white;
+}
+ion-select{
+    --padding-end:0px;
+}
+.btnCancelar{
+    position: relative;  
+    border-radius: 30px;
+    outline: none;
+    background: transparent;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding-block-start: 7vh;
+}
+.btnInfo{
+    --background: #157424;
+    margin: 0 auto;
+    display: block;
+    outline: none;
+}

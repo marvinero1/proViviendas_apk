@@ -1,0 +1,64 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+ion-content{
+    --background:#7DA244;
+}
+ion-toolbar{
+    --background:#359444;
+}
+ion-menu{
+    --background: #707070;
+}
+.item{
+    --background:#707070;
+}
+.imgMenu{
+    margin:0 auto;
+}
+.marend{
+    -webkit-margin-end: 10px;
+    margin-inline-end: 10px;
+    --background: #6F6F6F;
+    background:#6F6F6F;
+    
+}
+.contmenu{
+    --background: #6F6F6F;
+    background:#6F6F6F;
+    // top: 5vh;
+}
+.centrado{
+    padding: 20px 0px 0px 0px;
+    margin: 8px auto; 
+    display: block;
+    width: 64px;
+}
+h2{
+    color: #157424;
+}  
+.centrado{
+    margin: 16px auto;
+    display: block;
+    width: 145px;
+}
+.header-md:after{
+    background-image:none;
+}
+.marend{
+-webkit-margin-end: 10px;
+margin-inline-end: 10px;
+}
+.contmenu{
+    --background: #ffffff;
+    background:#ffffff;
+}

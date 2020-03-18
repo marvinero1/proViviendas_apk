@@ -1,0 +1,50 @@
+ion-input,ion-item{
+    color:#FFFFFF;
+    --padding-bottom: 0px;
+}
+ion-item{
+  --background:transparent;
+}
+
+.logoPro{
+    position: relative;
+    margin: 0 auto;
+    padding-block-start: 9vh;
+    padding-block-end: 10vh;
+    width: 45%;
+}
+
+.botonContinuar{
+  position: relative;  
+  border-radius: 30px;
+  outline: none;
+  background: transparent;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.botonOmitir{
+  position: relative;
+  margin: auto;  
+  outline: none;
+  background: transparent;  
+}
+
+.omitirbtn{
+  font-size: 15px;
+  font-weight: 900;
+  color: white;
+  display: flex;
+}
+.btnGoogle ,.btnFacebook{
+  border-radius: 30px;
+  outline: none;
+  background: transparent;
+  max-width: 100%;
+}
+.btnInfo{
+  --background: #359444;
+  margin: 0 auto;
+  position: relative;
+  outline: none;
+  width: 75%;
+}

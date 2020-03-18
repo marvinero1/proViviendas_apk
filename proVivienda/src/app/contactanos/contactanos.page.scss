@@ -1,0 +1,34 @@
+.centrado{
+	margin:auto;
+	display:block;
+}
+
+ion-item {
+    --border-style: none !important;
+    --background: white;
+}
+ion-card{
+    --background:#fff;
+    margin: 0px;
+    border-radius: 0px;
+}
+.icotextcont{
+    text-decoration: none;
+    // color: #6E6E6E;
+}
+.vfc{
+    color: #157424;
+}
+.hrfa{
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    color: #6E6E6E;
+}
+ion-content{
+    --background:#fff;
+}
+.imgMenu{
+    margin:0 auto;
+	display:block;
+}

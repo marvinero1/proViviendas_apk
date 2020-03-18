@@ -1,0 +1,132 @@
+<ion-header>
+  <ion-toolbar style="--background:#7DA244;">
+    <ion-buttons slot="primary">
+      <ion-button (click)="closemodal()" style="color:white;">Close<ion-icon  slot="end" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content no-padding>
+    <ion-img  [src]="'assets/images/proVivienda.png'" class="logoPro"></ion-img>
+    <h2 align-items-center style="text-align: center; color:white;">Datos Inmueble</h2>
+<ion-grid>
+<ion-row align-items-center  style="text-align: center">
+
+<ion-col size="10" style="margin: 0 auto;" align-self: center>
+  
+  <ion-col style="text-align: center" align-self: center>   
+    <div>
+      <ion-button class="btnInfo" (click)="imageAlbum()">Album<ion-icon style="padding-left: 1vh; color:white" name="images"></ion-icon></ion-button>
+    </div>
+  </ion-col>
+  <ion-col style="text-align: center" align-self: center>
+      <div> 
+        <ion-button class="btnInfo" (click)="takephoto()">Camara<ion-icon style="padding-left: 1vh; color:white" name="camera"></ion-icon></ion-button>
+      </div>
+    </ion-col>
+
+  <form >
+    <ion-list style="border-radius: 2vh;" padding>
+      <ion-item >
+        <ion-icon name="briefcase"></ion-icon>
+        <ion-input placeholder="Nombre Inmobiliaria" multiple="false" cancelText="Cancelar" required></ion-input>         
+      </ion-item>
+      <br>
+      <ion-item >
+        <ion-icon name="bookmark"></ion-icon>
+        <ion-input placeholder="Título" multiple="false" cancelText="Cancelar" required></ion-input>         
+      </ion-item>
+      <br >
+      <ion-item >      
+        <ion-icon name="bookmarks"></ion-icon>
+        <ion-label stacked></ion-label>
+        <ion-input placeholder="Descripción"  cancelText="Cancelar" okText="Aceptar!" required></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-icon  style="color:#157424;" name="resize"></ion-icon>
+        <ion-label stacked></ion-label>
+        <ion-input placeholder="Metros Cuadrados M2"  cancelText="Cancelar" okText="Aceptar!" required></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>   
+         <ion-icon style="color:#157424;" src="assets/images/icons/cuartos.svg" ></ion-icon> 
+        <ion-label stacked></ion-label>
+        <ion-input placeholder="Cuartos"  cancelText="Cancelar" okText="Aceptar!" required></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-icon style="color:#157424;" src="assets/images/icons/banera.svg" ></ion-icon> 
+        <ion-label stacked></ion-label>
+        <ion-input placeholder="Baños"  cancelText="Cancelar" okText="Aceptar!" required></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>        
+        <ion-icon name="car"></ion-icon>
+        <ion-label stacked></ion-label>
+        <ion-input placeholder="Garajes" cancelText="Cancelar" okText="Aceptar!" required></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-icon style="color:#157424;" src="assets/images/icons/tinmueble.svg" ></ion-icon>
+        <ion-label  style="color:#989898;">Tipo Inmueble</ion-label>
+        <ion-label stacked></ion-label>
+        <ion-select  multiple="false" cancelText="Cancelar" okText="Aceptar!">
+          <ion-select-option>Casa</ion-select-option>
+          <ion-select-option>Departamento</ion-select-option>
+          <ion-select-option>Chalet</ion-select-option>
+          <ion-select-option>Lote</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-icon name="list"></ion-icon>
+        <ion-label stacked style="color:#989898;">Oferta</ion-label>      
+        <ion-select multiple="false" cancelText="Cancelar" okText="Aceptar!">
+          <ion-select-option>Venta</ion-select-option>
+          <ion-select-option>Anticretico</ion-select-option>
+          <ion-select-option>Alquiler</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-icon name="compass"></ion-icon>
+        <ion-label stacked></ion-label>
+        <ion-input  type="text" placeholder="Dirección" required></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-icon name="cash"></ion-icon>
+        <ion-label stacked></ion-label>
+        <ion-input  type="text" placeholder="Precio" required></ion-input>
+      </ion-item>     
+      <br>
+      <ion-item>
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label stacked style="color:#989898;">Fecha</ion-label>
+        <ion-datetime cancel-text="Cancelar" done-text="Aceptar" display-format="DD-MM-YYYY"></ion-datetime>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-icon name="call"></ion-icon>
+        <ion-label stacked></ion-label>
+        <ion-input  type="number" placeholder="Teléfono"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-icon name="phone-portrait"></ion-icon>
+        <ion-label stacked></ion-label>
+        <ion-input  type="number" placeholder="Celular"></ion-input>
+      </ion-item>       
+    </ion-list>  
+  </form>        
+</ion-col> 
+<ion-col style="text-align: center" align-self: center>   
+    <div>
+      <ion-button class="btnInfo" (click)="acept()">Aceptar</ion-button>
+    </div>
+  </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

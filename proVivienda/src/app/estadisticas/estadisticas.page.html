@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="perfil()">
+          <ion-icon slot="icon-only" color="light" name="contact"></ion-icon>
+        </ion-button>
+      </ion-buttons>    
+      <ion-title>     
+          <h6 style="text-align:center; color:white;">Estadisticas</h6>   
+      </ion-title>  
+      <ion-buttons slot="end">
+        <ion-menu-button color="light" autoHide="false"></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar> 
+  </ion-header>
+  
+<ion-content no-padding >
+<div class="ion-content" >
+  <ion-item-group >
+    <ion-card (click)="detalle()" no-padding *ngFor="let item of [1,2,3.4]">
+      <ion-card-content>
+    <div >
+      <ion-item lines="none">
+        <ion-thumbnail slot="start" >
+          <img src="assets/images/casa2.png">
+        </ion-thumbnail>
+        <ion-label text-wrap>
+            <p style="color:#157424;"><strong>Casa en venta</strong></p>
+          <p>Casa de 300 M2 zona norte 
+              Totalmente a estrenar con todo</p>
+            <p style="color:#7DA244">Publicado 23/05/2019</p>
+        </ion-label>
+        <ion-icon  name="arrow-forward"></ion-icon>
+      </ion-item>
+      <br>
+    </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-item-group>
+</div>
+</ion-content>

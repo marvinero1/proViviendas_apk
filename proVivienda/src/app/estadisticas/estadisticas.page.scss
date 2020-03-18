@@ -1,0 +1,36 @@
+ion-content {
+    --background: white;
+}
+
+ion-item {
+    --background: transparent;
+}
+
+ion-list {
+    background: transparent;
+}
+
+h2 {
+    color: #157424;
+    font-weight: bold;
+}
+
+ion-icon {
+
+    color: #157424;
+}
+
+ion-card-content {
+    border-radius: 4vh;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 3px;
+    font-size: 4px;
+    line-height: 0.2;
+    padding-bottom: 0px;
+}
+
+ion-card {
+    border-radius: 15px;
+    border: #7DA244 2px solid;
+}

@@ -1,0 +1,123 @@
+<ion-app>
+<ion-split-pane style="--background:#359444;">
+  <ion-menu>
+  <ion-toolbar style=" padding-block-start: 4vh;">
+    <ion-img [src]="'/assets/images/proVivienda.png'" style="width: 85px;margin: 8px auto;"></ion-img>
+  </ion-toolbar>
+
+  
+<ion-content class="item" padding>
+  <ion-list style="padding-top: 0px; padding-bottom: 0px;">
+  <ion-menu-toggle auto-hide="false" >
+    <ion-item class="item" [routerDirection]="'root'" [routerLink]="'/home-tabs'" lines="none">
+      <ion-icon color="light" slot="start" [name]="'home'"></ion-icon>
+      <ion-label color="light">
+        Home
+      </ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+  <ion-menu-toggle auto-hide="false">
+    <ion-item [routerDirection]="'root'" [routerLink]="'/mis-favoritos'" lines="none">
+      <ion-icon color="light" slot="start" [name]="'star'"></ion-icon>
+      <ion-label color="light">
+        Favoritos
+      </ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+  <ion-menu-toggle auto-hide="false" >
+    <ion-item [routerDirection]="'root'" [routerLink]="'/siguiendo'" lines="none">
+      <ion-icon color="light" slot="start" [name]="'contacts'"></ion-icon>
+      <ion-label color="light">
+        Siguiendo
+      </ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+  <ion-menu-toggle auto-hide="false" >
+    <ion-item [routerDirection]="'root'" [routerLink]="'/estadisticas'" lines="none">
+      <ion-icon color="light" slot="start" name="stats"></ion-icon>
+      <ion-label color="light">
+        Estadisticas
+      </ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+  <ion-menu-toggle auto-hide="false" >
+    <ion-item [routerDirection]="'root'" [routerLink]="'/ciudad'" lines="none">
+      <ion-icon color="light" slot="start"  name="cash"></ion-icon>
+      <ion-label color="light">
+        Pagos
+      </ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+  <ion-menu-toggle auto-hide="false" >
+      <ion-item [routerDirection]="'root'" [routerLink]="'/inmobiliaria-tabs/tab1'" lines="none">
+        <ion-icon color="light" slot="start" name="briefcase"></ion-icon>
+        <ion-label color="light">
+          Inmobiliarias
+        </ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+    <ion-menu-toggle auto-hide="false" >
+      <ion-item [routerDirection]="'root'" [routerLink]="'/corredor-tabs/tab1'" lines="none">
+        <ion-icon color="light" slot="start"  name="walk"></ion-icon>
+        <ion-label color="light">
+          Corredores
+        </ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+  <ion-menu-toggle auto-hide="false" >
+    <ion-item [routerDirection]="'root'" [routerLink]="'/mis-corredores'" lines="none">
+      <ion-icon color="light" slot="start"  name="people"></ion-icon>
+      <ion-label color="light">
+        Mis corredores
+      </ion-label>
+    </ion-item>
+  </ion-menu-toggle> 
+  <ion-menu-toggle auto-hide="false" >
+    <ion-item  lines="none" [routerLink]="'/destacados'">
+      <ion-icon color="light" slot="start" name="checkmark-circle-outline"></ion-icon>
+      <ion-label color="light">
+        Destacados
+      </ion-label>
+    </ion-item>
+  </ion-menu-toggle>    
+  <ion-menu-toggle auto-hide="false">
+    <ion-item lines="none" [routerLink]="'/home-tabs/tab2'">
+      <ion-icon color="light" slot="start" name="pin"></ion-icon>
+      <ion-label color="light">
+        Ubicacion
+      </ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+  <ion-menu-toggle auto-hide="false">
+    <ion-item lines="none" [routerLink]="'/demanda'">
+      <ion-icon color="light" slot="start" name="megaphone"></ion-icon>
+      <ion-label color="light">
+        Demanda
+      </ion-label>
+    </ion-item>
+</ion-menu-toggle>
+<ion-menu-toggle auto-hide="false" >
+  <ion-item  lines="none" [routerLink]="'/mi-cuenta'">
+    <ion-icon color="light" slot="start" name="man"></ion-icon>
+    <ion-label color="light">
+      Afiliado
+    </ion-label>
+  </ion-item>
+</ion-menu-toggle>
+  <ion-menu-toggle auto-hide="false" >
+      <ion-item lines="none" [routerLink]="'/contactanos'">
+        <ion-icon color="light" slot="start" name="call"></ion-icon>
+        <ion-label color="light">
+          Contactanos
+        </ion-label>
+      </ion-item>
+</ion-menu-toggle>     
+  </ion-list>
+</ion-content>
+    <ion-footer>        
+        <p style="font-size: 11px;text-align: center;color:white ; --inner-border-width: 0;">Copyright © 2019 by <span style="font-weight: 900;" href="" > <a style="color: white;text-decoration: none;" href="http://bitproject.online/"> BitProject.</a></span> </p>
+    </ion-footer>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

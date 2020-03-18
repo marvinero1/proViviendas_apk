@@ -1,0 +1,66 @@
+ion-icon{
+    width: 2em;
+    height: 2em;
+    color:white;
+}
+.iconStart{
+    width: 1em;
+    height: 1em;
+    color:white;
+}
+a {
+    color: #909090;
+    background: white
+    font-size=19px;
+}
+ion-card{
+    --background:white;
+    border-radius: 20px;
+    box-shadow: inherit;
+    -webkit-box-shadow: 6px 4px 19px -4px rgba(0,0,0,0.52);
+    -moz-box-shadow: 6px 4px 19px -4px rgba(0,0,0,0.52);
+    box-shadow: 6px 4px 19px -4px rgba(0,0,0,0.52);
+}
+    
+ion-card-content{
+    background: white;
+    -webkit-box-shadow: 6px 4px 19px -4px rgba(0,0,0,0.52);
+    -moz-box-shadow: 6px 4px 19px -4px rgba(0,0,0,0.52);
+    box-shadow: 6px 4px 19px -4px rgba(0,0,0,0.52);
+}
+    
+h2{
+    font-size: 22px;
+    color: #157424;
+    margin-top: 5px;
+}
+h3{
+    font-size: 12px;
+    color: #909090;
+}
+
+.imagenpublicidad{
+    width: 75%;
+}
+p{
+    font-size: 13px;
+    color: black;
+    padding-block-end: 10px;
+}
+.swiper-slide img{
+    max-height: 75px;
+}
+ion-content{
+    --background: white;
+}
+.btnfavo{
+    margin: -25px 15px 0px 0px;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+}
+.btnInfo{
+    --background: #359444;
+    margin: 0 auto;
+    display: block;
+}

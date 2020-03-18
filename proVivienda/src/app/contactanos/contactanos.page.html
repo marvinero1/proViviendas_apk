@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button color="light"></ion-back-button> 
+    </ion-buttons>
+    <ion-item style="--background:transparent; margin: 0 auto; display: table;">
+    <div>    
+      <img class="imgMenu" src="assets/images/proMenu.png">
+    </div>
+    </ion-item>
+    <ion-buttons slot="end">
+      <ion-menu-button color="light" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar> 
+</ion-header>
+
+<ion-content >
+  <ion-item  style="height: 240px;display: flex">
+  <ion-img src="assets/images/proViviendas.png" style="width: 42%;margin: auto;"></ion-img>
+  </ion-item> 
+
+  <ion-card-content padding style="padding: 38px;">
+    <p style="color:#6E6E6E">
+      Si desea tener uno de nuestros servicios y ser parte de 
+      la aplicación <strong> Pro-viviendas </strong> Hable con nosotros con gusto lo atenderemos. 
+    </p>
+    </ion-card-content> 
+    <br>
+    <ion-card-header padding style="padding: 30px;">
+      <a [href]="''" class="icotextcont hrfa" ><ion-icon class="vfc" name="logo-whatsapp"></ion-icon>&nbsp;&nbsp;<span style="font-size: 15px;">+591 60776767</span> </a>
+      <hr style="background: #6E6E6E;">
+      <h6 class="icotextcont hrfa" (click)="openCallNumber('59160776767')"><ion-icon class="vfc" name="call"></ion-icon>&nbsp;&nbsp;<span style="font-size: 15px;">+591 60776767</span> </h6>
+      <hr style="background: #6E6E6E;">
+      <a [href]="'mailto: info@anunciateapp.com'" class="icotextcont hrfa"><ion-icon class="vfc" name="mail"></ion-icon>&nbsp;&nbsp;<span style="font-size: 15px;">info@proviendasapp.com</span> </a>
+      <hr style="background: #6E6E6E;">
+      <a [href]="'mailto: support@anunciateapp.com'" class="icotextcont hrfa"><ion-icon class="vfc" name="mail"></ion-icon>&nbsp;&nbsp;<span style="font-size: 15px;">support@proviendasapp.com</span> </a>
+      <hr style="background: #6E6E6E;">
+    </ion-card-header>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "proVivienda",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

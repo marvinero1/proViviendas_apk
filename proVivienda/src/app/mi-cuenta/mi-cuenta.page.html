@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+    <img src="assets/images/proMenu.png">  
+    <!-- <div>    
+      <img class="imgMenu" src="">
+    </div>       -->
+  </ion-title>
+  </ion-toolbar> 
+</ion-header>
+
+<ion-content no-padding>
+  <p style="text-align:center; color:green; margin:0 auto; font-size: 20px; padding-block-start: 3vh;"><strong>Mi Cuenta</strong></p>
+<ion-row align-items-center style="text-align: center">  
+    <img style="margin: 0 auto; display:block; padding-block-start:5vh; padding-block-end: 5vh;" src="assets/images/rudyBoy.png">   
+  <ion-col size="10" style="margin: 0 auto;" align-self: center>
+    <form >
+      <ion-item>      
+        <ion-label ngModel name= "nombreUsuario" #nombre="ngModel" type="text">Bolivia</ion-label>
+      </ion-item>
+      <br>
+      <ion-item>   
+        <ion-label ngModel name="ciudad" type="text" required>Cochabamba</ion-label>
+      </ion-item> 
+      <br>
+      <ion-item>   
+        <ion-label ngModel name="usuario"  type="text"  required>Ruddy Chavez</ion-label>
+      </ion-item>
+      <br>
+      <ion-item>   
+        <ion-label ngModel name="contraseña"  type="text" required>Contraseña</ion-label>
+      </ion-item>
+      <br>
+      <ion-item>   
+        <ion-label ngModel name="e-mail"  type="text" required>steve_rca@hotmail.com</ion-label>
+      </ion-item> 
+    </form>
+  </ion-col>
+  </ion-row>
+    <ion-col size="12" size-sm="4" style="text-align: center" align-self: center>
+      <div>
+        <ion-button shape="round" class="btnInfo" (click)="editarCuenta()">Editar cuenta</ion-button>       
+      </div>
+    </ion-col>
+    <ion-col size="12" size-sm="4" style="text-align: center" align-self: center>
+      <div>
+        <ion-button shape="round" class="btnInfo1" >Cerrar sesión</ion-button>       
+      </div>
+    </ion-col>
+</ion-content>
+
+  

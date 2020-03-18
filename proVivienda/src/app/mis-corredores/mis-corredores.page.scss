@@ -1,0 +1,20 @@
+ion-content{
+    --background:white;
+}
+.ion-content{
+    --background:white;
+    padding-top: var(--ion-padding, 0px);
+}
+.icongarbage{
+    color:white;
+}
+ion-item{
+    --background:transparent;
+     -webkit-padding-before: 1vh;
+}
+h2{
+    color: #157424;
+}
+ion-icon{   
+    color:#157424;
+}

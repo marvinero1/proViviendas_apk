@@ -1,0 +1,40 @@
+ion-item{
+  --background: transparent;
+  --border-color: transparent;
+}
+ion-slide{
+	display:block;
+}
+
+p{
+   font-size: 22px;
+   margin-bottom: 74px;
+   font-weight: lighter;
+   padding-block-start: 11vh;
+   color: white;
+   background: linear-gradient(90deg, #7DA244,#000,#fff);
+   background-repeat: no-repeat;
+   background-size: 80%;
+   animation: animate 6s linear infinite;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+@keyframes animate{
+  0%{
+    background-position: -500%;
+  }
+  100%{
+    background-position: 500%;
+  }
+}
+.btnInfo{
+  --background: #157424;
+  margin: 0 auto;
+  display: block;
+  outline: none;
+  width: 75%;
+}
+ion-slide{
+  --bullet-background:yellow;
+  --bullet-background-active:yellow;
+}

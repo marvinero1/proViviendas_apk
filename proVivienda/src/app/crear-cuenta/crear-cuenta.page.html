@@ -1,0 +1,77 @@
+<ion-content no-padding>
+  <ion-grid class="ion-contentForm">
+    <ion-row align-items-center style="text-align: center">
+      <ion-col size=12 style="padding-block-start: 2vh; padding-block-end: 5vh;">
+        <img src="/assets/images/proVivienda.png" style="width:35%;" />
+        <img src="/assets/images/creaCuenta.png" style="width:45%; padding-left: 2vh;" />
+      </ion-col>
+      <ion-col size="10" style="margin: 0 auto;" align-self: center>
+        <form>
+          <ion-item>
+            <ion-icon name="person"></ion-icon>
+            <ion-input type="text" placeholder="Nombre Completo" required></ion-input>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-icon name="contact"></ion-icon>
+            <ion-input type="number" placeholder="C.I" required></ion-input>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-icon name="globe"></ion-icon>
+            <ion-label stacked style="color:white;"> Pais</ion-label>
+            <ion-select>
+              <ion-select-option value="1">{{pais.nombre}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-icon name="globe"></ion-icon>
+            <ion-label stacked style="color:white;">Ciudad</ion-label>
+            <ion-select>
+              <ion-select-option value="1">{{pais.nombre}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-icon name="call"></ion-icon>
+            <ion-input type="number" placeholder="Teléfono" required></ion-input>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-icon name="phone-portrait"></ion-icon>
+            <ion-input type="number" placeholder="Celular" required></ion-input>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <ion-input type="number" placeholder="Whatsapp"></ion-input>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-icon name="person"></ion-icon>
+            <ion-input type="text" placeholder="Nombre Usuario" required></ion-input>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-icon name="at"></ion-icon>
+            <ion-input type="e-mail" placeholder="Correo electrónico" required></ion-input>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-icon name="eye-off"></ion-icon>
+            <ion-input type="password" placeholder="Password"></ion-input>
+          </ion-item>
+          <br>
+        </form>
+        <br>
+        <ion-col size="12" size-sm="4" style="text-align: center" align-self: center>
+          <ion-button shape="round" class="btnInfo" (click)="closemodal()">Cancelar</ion-button>
+        </ion-col>
+        <ion-col size="12" size-sm="4" style="text-align: center" align-self: center>
+          <ion-button shape="round" class="btnInfo">Continuar</ion-button>
+        </ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

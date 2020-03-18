@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="perfil()">
+        <ion-icon slot="icon-only" color="light" name="contact"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      <h6 style="text-align:center; color:white;">Mis Favoritos</h6>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button color="light" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content no-padding>
+  <div class="ion-content" padding>
+    <ion-item-group>
+      <ion-item>
+        <p style="color:#157424;  margin-block-start: 0em; margin-block-end: 0em;"><strong>Casas</strong></p>
+      </ion-item>
+      <ion-item-sliding *ngFor="let item of [1,2]">
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img src="assets/images/vivienda.png">
+          </ion-thumbnail>
+          <ion-label text-wrap>
+            <p style="color:#157424;"><strong>Lote 1 en venta</strong></p>
+            <p>Vendedor: Rene Gumiel</p>
+          </ion-label>
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-item>
+
+        <ion-item-options side="end">
+          <ion-item-option color="danger" (click)="unread(item)">
+            <ion-icon class="icongarbage" slot="icon-only" name="trash"></ion-icon>Eliminar
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-item-group>
+
+    <ion-item-group>
+      <ion-item>
+        <p style="color:#157424;  margin-block-start: 0em; margin-block-end: 0em;"><strong>Departamentos</strong></p>
+      </ion-item>
+      <ion-item-sliding *ngFor="let item of [1,2]">
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img src="assets/images/casa2.png">
+          </ion-thumbnail>
+          <ion-label text-wrap>
+            <p style="color:#157424;"><strong>Lote 1 en venta</strong></p>
+            <p>Vendedor: Rene Gumiel</p>
+          </ion-label>
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-item>
+
+        <ion-item-options side="end">
+          <ion-item-option color="danger" (click)="unread(item)">
+            <ion-icon class="icongarbage" slot="icon-only" name="trash"></ion-icon>Eliminar
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-item-group>
+    
+    <ion-item-group>
+      <ion-item>
+        <p style="color:#157424;  margin-block-start: 0em; margin-block-end: 0em;"><strong>Lotes</strong></p>
+      </ion-item>
+      <ion-item-sliding *ngFor="let item of [1,2]">
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img src="assets/images/casa3.png">
+          </ion-thumbnail>
+          <ion-label text-wrap>
+            <p style="color:#157424;"><strong>Lote 1 en venta</strong></p>
+            <p>Vendedor: Rene Gumiel</p>
+          </ion-label>
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-item>
+
+        <ion-item-options side="end">
+          <ion-item-option color="danger" (click)="unread(item)">
+            <ion-icon class="icongarbage" slot="icon-only" name="trash"></ion-icon>Eliminar
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-item-group>
+    <br>
+  </div>
+</ion-content>

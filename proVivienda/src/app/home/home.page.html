@@ -1,0 +1,30 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons (click)="perfil()" slot="start"><ion-icon name="contact"></ion-icon>
+    </ion-buttons>
+    <div>    
+    <img class="imgMenu" src="assets/images/proMenu.png">
+    </div>
+    <ion-buttons slot="end">
+      <ion-menu-button color="light" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content no-padding> 
+  <ion-card no-padding *ngFor="let item of [1,2,3,4]">
+    <ion-card-content padding >
+      <ion-img src="assets/images/casaCategoria.png"></ion-img>
+        <ion-fab-button class="btnfavo" color="primary">
+          <ion-icon class="iconStart" name="star"></ion-icon>
+        </ion-fab-button>
+        <h2><strong>Casa en Venta nuevo</strong></h2>              
+        <h3 size="12">Publicado por: Ector Gonzales</h3>
+        <br>           
+        <p color="black">
+          Casa en venta en venta con 6 dormitorios totalmente todo nuevo y amoblado cuenta con parrillero, sauna, piscina , y todas las comodidades de ultima generación. 
+        </p>
+        <ion-button class="btnInfo" (click)="btnInfo()">Mas Informacion</ion-button>
+    </ion-card-content>   
+  </ion-card>             
+</ion-content>
