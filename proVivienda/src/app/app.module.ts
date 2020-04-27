@@ -8,18 +8,19 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { ModalController, LoadingController, Platform, MenuController } from '@ionic/angular';
-import { RestangularModule, Restangular } from 'ngx-restangular';
+// import { RestangularModule, Restangular } from 'ngx-restangular';
 import { Camera } from '@ionic-native/camera/ngx';
 import { CallNumber } from '@ionic-native/call-number/ngx';
 
 
 // Function for setting the default restangular configuration
-export function RestangularConfigFactory(RestangularProvider) {
-  RestangularProvider.setBaseUrl('http://api.restngx.local/v1');
-// RestangularProvider.setDefaultHeaders({'Authorization': 'Bearer UDXPx-Xko0w4BRKajozCVy20X11MRZs1'});
-}
+// export function RestangularConfigFactory(RestangularProvider) {
+//   RestangularProvider.setBaseUrl('http://api.restngx.local/v1');
+//   RestangularProvider.setDefaultHeaders({'Authorization': 'Bearer UDXPx-Xko0w4BRKajozCVy20X11MRZs1'});
+// }
 
 
 @NgModule({
@@ -29,7 +30,8 @@ export function RestangularConfigFactory(RestangularProvider) {
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    RestangularModule.forRoot(RestangularConfigFactory),
+    HttpClientModule,
+    //RestangularModule.forRoot(RestangularConfigFactory),
   
   ],
   providers: [

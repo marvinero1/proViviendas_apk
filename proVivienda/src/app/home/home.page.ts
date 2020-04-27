@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { ModalController, NavController, LoadingController,  NavParams,Platform, MenuController } from '@ionic/angular';
+import { ConexionService } from './../conexion.service';
 
 @Component({
   selector: 'app-home',
@@ -21,8 +22,17 @@ export class HomePage {
     speed:2000
   };
 
-  constructor(private router:Router, private loadingCtrl:LoadingController){   
+  inmueble:any;
+
+  constructor(private router:Router, private loadingCtrl:LoadingController, public conexion:ConexionService){   
+    this.conexion.getInmuebles()
+      .then((data:any)=>{
+        this.inmueble = data.data;
+        console.log(this.inmueble);
+      });
   }
+
+
   perfil(){
     this.router.navigate(['/mi-cuenta']);
   }

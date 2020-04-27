@@ -41,16 +41,11 @@
   
   <ion-item>
     <ion-label text-wrap>
-      <h1>Casa en venta</h1>
+      <h1>{{inmueble.titulo}}</h1>
       <br>
       <h2>Publicado por: Rudy Chavez</h2>
       <h6 style="color:#7DA244;">Publicado el 29-04-2019</h6>
-      <p>Una casa a precio de lote ubicada sobre la carretera a Oruro a la altura del Km. 27. Actualmente documentación
-        como propiedad “Fuera de Radio Urbano” El ingreso está sobre la misma carretera como puede verse en las fotos.
-        <br> Precio inmejorable y usos alternativos muy diversos. Totalmente urbanizable, de uso agrícola, industrial o
-        para servicios al transporte. Sobre la nueva Doble Via, cuenta con todos los servicios básicos y más de 7.500m2.
-        Actualmente el precio rebajado es de $us.480.000.-. Para mayor información por favor contactarse al
-        7_6_4_0_3_9_9_5. Negociable.</p>
+      <p>{{inmueble.descripcion}}</p>
     </ion-label>
   </ion-item>
   <ion-grid>
@@ -88,7 +83,7 @@
         <ion-icon size="large" color="primary" src="assets/images/icons/mano.svg"></ion-icon>
         <ion-label class="iconLabel" text-wrap>
           <h5>Tipo inmueble</h5>
-          <p>Casa</p>
+          <p>{{inmueble.tipo_inmueble}}</p>
         </ion-label>
       </ion-col>
       <ion-col size="6" size-md="3">
@@ -96,6 +91,20 @@
         <ion-label class="iconLabel" text-wrap>
           <h5>Ciudad</h5>
           <p>Cochabamba</p>
+        </ion-label>
+      </ion-col>
+      <ion-col size="6" size-md="3">
+        <ion-icon size="large" color="primary" name="logo-whatsapp"></ion-icon>
+        <ion-label class="iconLabel" text-wrap>
+          <h5>Whatsapp</h5>
+          <p>{{inmueble.whatsapp}}</p>
+        </ion-label>
+      </ion-col>
+      <ion-col size="6" size-md="3">
+        <ion-icon size="large" color="primary" name="information"></ion-icon>
+        <ion-label class="iconLabel" text-wrap>
+          <h5>Estado</h5>
+          <p>{{inmueble.estado}}</p>
         </ion-label>
       </ion-col>
     </ion-row>
